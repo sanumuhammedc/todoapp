@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    min-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0b6b7e 50%, #0d798f 50%);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.todo-container{
+    width: 30%;
+    left: 50%;
+    top:50%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.input-section{
+    background-color: #056679;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 7px 6px #0000003b;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 15px;
+    color: #ababab;
+}
+
+.input-section input{
+    border-radius: 10px;
+    border: 1px solid #034f5e;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #056679;
+    outline: none;
+    color: rgb(252, 252, 252);
+}
+
+input::placeholder{
+    color: #012d36;
+}
+
+ul{
+    text-align: left;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    color: #a7a7a7;
+    background-color: #056679;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 7px 6px #0000003b;
+    display: flex;
+}
+
+ul li i{
+    text-align: right;
+    flex: 1;
+    cursor: pointer;
+}
+
+@media (max-width:1040px) {
+    .todo-container{
+        width: 40%;
+    }
+    
+}
+
+@media (max-width:800px) {
+    .todo-container{
+        width: 60%;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .todo-container{
+        width: 90%;
+    }
+    
+}
